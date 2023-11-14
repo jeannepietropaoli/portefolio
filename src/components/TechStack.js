@@ -14,7 +14,7 @@ import SectionArrow from "./SectionArrow";
 export default function TechStack(props) {
     return (
         <section ref={props.reference} id="techStack" style={{"--scroll-percentage": props.scrollPercentage}}>
-            <div class="section-navigation-container">
+            <div className="section-navigation-container">
                 <SectionArrow previousSectionRef={props.previousSectionRef} nextSectionRef={props.nextSectionRef} color="grey" />
                 <span className="section-number">03</span>
             </div>
@@ -22,7 +22,7 @@ export default function TechStack(props) {
             <div className="techStack--main-content">
                 <p>Here are the technologies I am used to. You can hover or click on the cards to discover the details.</p>
                 <p>The animated percentage circles on these cards are more about visual engagement than precise skill measurement. They serve as an interactive, eye-catching element, offering a glimpse into my familiarity with various technologies and my keen interest on interactive UI designs.</p>
-                <div class="stack-container">
+                <div className="stack-container">
                     <FlipCard name="HTML" url={html} percentage="85" />
                     <FlipCard name="CSS" url={css} percentage="70" />
                     <FlipCard name="JavaScript" url={js} percentage="70" />

@@ -22,16 +22,14 @@ export default function MenuItem(props) {
     }
 
     return (
-        <div className={`menu-item ${props.current ? "current" : ""}`}>
-            <li>
+            <li className={`menu-item ${props.current ? "current" : ""}`}>
                 <a 
                     href={`#${props.itemName}`}
                     onClick={handleClick}
-                    ariaLabel={`Scroll to ${props.itemName}`}
+                    aria-label={`Scroll to ${props.itemName}`}
                 >
                     {`${props.itemName}`}
                 </a>
             </li>
-        </div>
     )
 }

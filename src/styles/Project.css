@@ -39,6 +39,7 @@
 }
 
 .project--overall-container {
+    z-index: 1;
     position: relative;
     background-color: rgb(241, 241, 241);
     color: var(--black-font-color);

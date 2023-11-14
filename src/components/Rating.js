@@ -12,7 +12,7 @@ export default function Rating(props) {
                         a 15.9155 15.9155 0 0 1 0 -31.831"
                         fill="none"
                         stroke="lightgrey"
-                        stroke-width="3"
+                        strokeWidth="3"
                     />
                 <path  // circle with a circumference of 100 - radius = circ/2pi = 100/2*3.14 = 15.9155
                     // initially starts at top left corner - here moved to the right by half the canvas, then to the bottom by (36-15.9155 *2)/2 = 2.0845
@@ -23,7 +23,7 @@ export default function Rating(props) {
                     a 15.9155 15.9155 0 0 1 0 -31.831"
                     fill="none"
                     stroke="green"
-                    stroke-width="3"
+                    strokeWidth="3"
                 />
             </svg>
             <span className="percentage">{props.percentage}%</span>

@@ -21,7 +21,7 @@ export default function SectionArrow(props) {
             {
             props.previousSectionRef && 
                 <button className="previous arrow-btn" onClick={() => goToPreviousSection(props.previousSectionRef)}>
-                    <div class="arrows-container">
+                    <div className="arrows-container">
                         <img className="up-arrow-img" src={props.color==="grey" ? upArrowGrey : upArrowWhite}/>
                         <img className="up-arrow-img" src={props.color==="grey" ? upArrowGrey : upArrowWhite}/>
                     </div>
@@ -30,7 +30,7 @@ export default function SectionArrow(props) {
             {
                 props.nextSectionRef && 
                     <button className="next arrow-btn" onClick={() => goToNextSection(props.nextSectionRef)}>
-                        <div class="arrows-container">
+                        <div className="arrows-container">
                             <img className="down-arrow-img" src={props.color==="grey" ? downArrowGrey : downArrowWhite}/>
                             <img className="down-arrow-img" src={props.color==="grey" ? downArrowGrey : downArrowWhite}/>
                         </div>

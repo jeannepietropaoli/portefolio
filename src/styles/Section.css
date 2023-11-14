@@ -58,7 +58,7 @@ section {
 
 @media (max-aspect-ratio: 1/1) {
     .section-number {
-        z-index: -1;
+        z-index: 1;
         font-size: 110px;
         text-decoration-thickness: 4px;
     }

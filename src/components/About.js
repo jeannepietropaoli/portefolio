@@ -7,7 +7,7 @@ import SectionArrow from "./SectionArrow";
 export default function About(props) {
     return (
         <section ref={props.reference} id="about" style={{"--scroll-percentage": props.scrollPercentage}}>
-            <div class="section-navigation-container">
+            <div className="section-navigation-container">
                 <SectionArrow previousSectionRef={props.previousSectionRef} nextSectionRef={props.nextSectionRef} color="grey" />
                 <span className="section-number">02</span>
             </div>

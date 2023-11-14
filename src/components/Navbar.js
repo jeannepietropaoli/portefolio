@@ -11,12 +11,12 @@ export default function Navbar(props) {
         setMenuHidden(prevState => !prevState)
     }
 
-    const menuItemsElements = menuItems.map(item => {
-        return <MenuItem itemName={item} current={props.currentSection === item} closeMenu={() => setMenuHidden(true)} />
+    const menuItemsElements = menuItems.map((item, index) => {
+        return <MenuItem key={index} itemName={item} current={props.currentSection === item} closeMenu={() => setMenuHidden(true)} />
     })
 
     return (
-        <navbar>
+        <nav>
             {menuHidden && 
                 <button onClick={() => setMenuHidden(false)}>
                     <span className="menu--dot"></span>
@@ -31,6 +31,6 @@ export default function Navbar(props) {
                 </>
             }
             <ul className={`navbar-list`}>{menuItemsElements}</ul>
-        </navbar>
+        </nav>
     )
 }

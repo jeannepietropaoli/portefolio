@@ -21,6 +21,8 @@
     background-color: white;
     padding: 20px;
     transform-style: preserve-3d;
+    display: flex;
+    align-items: center;
 }
 
 .front {

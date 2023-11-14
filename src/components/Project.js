@@ -16,7 +16,7 @@ export default function Project(props) {
                 <div className="project--description">
                     <p>{props.description}</p>
                 </div>
-                <div class="project--tech-aspects">
+                <div className="project--tech-aspects">
                     <div className="project--tech-stack">
                         <p>{props.techStack}</p>
                     </div>

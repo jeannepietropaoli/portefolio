@@ -51,14 +51,14 @@ export default function Projects(props) {
     
     return (
         <section ref={props.reference} id="projects" style={{"--scroll-percentage": props.scrollPercentage}}>
-            <div class="section-navigation-container">
+            <div className="section-navigation-container">
                 <SectionArrow previousSectionRef={props.previousSectionRef} nextSectionRef={props.nextSectionRef} color="grey" />
                 <span className="section-number">04</span>
             </div>
             <h2 className="section-title">Projects</h2>
             <p>Here are some of my projects ...</p>
-            <div class="projects-container">
-                    {projects.map(project => <Project {...project} /> )}
+            <div className="projects-container">
+                    {projects.map((project, index) => <Project {...project} key={index} /> )}
                 </div>
         </section>
     )

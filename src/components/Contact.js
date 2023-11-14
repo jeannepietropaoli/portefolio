@@ -10,17 +10,17 @@ import SectionArrow from "./SectionArrow";
 export default function Contact(props) {
     return (
         <section ref={props.reference} id="contact" style={{"--scroll-percentage": props.scrollPercentage}}>
-            <div class="section-navigation-container">
+            <div className="section-navigation-container">
                 <SectionArrow previousSectionRef={props.previousSectionRef} color="white" />
                 <span className="section-number">05</span>
             </div>
             <img className="contact--background-img" src={contactBackground}/>
             <h2 className="section-title">Contact</h2>
-            <div class="contact--main">
-                <div class="contact--content">
+            <div className="contact--main">
+                <div className="contact--content">
                     <p>That's already it, or is it really ?</p>
                     <p>My inbox is always open : you can reach out for any question or opportunity !</p>
-                    <div class="social-networks-container">
+                    <div className="social-networks-container">
                         <p>You can also spy a little more on there :</p>
                         <div className="social-networks-icons">
                             <a target="blank" href="https://github.com/jeannepietropaoli">

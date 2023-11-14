@@ -1,4 +1,4 @@
-navbar {
+nav {
     padding: 20px 5vw;
     display: flex;
     justify-content: flex-end;
@@ -59,7 +59,7 @@ navbar {
     display: none;
 }
 
-navbar > button {
+nav > button {
     display: none;
 }
 
@@ -68,7 +68,7 @@ navbar > button {
         animation: highlightCurrent 700ms ease-in-out forwards;
     }
 
-    navbar button {
+    nav button {
         display: block;
         border: none;
         background-color: transparent;
@@ -99,15 +99,15 @@ navbar > button {
         background-color: var(--green-color);
     }
 
-    navbar > button:hover .menu--dot {
+    nav > button:hover .menu--dot {
         animation: jump 400ms ease-in-out;
     }
 
-    navbar > button:hover .menu--dot:nth-child(2) {
+    nav > button:hover .menu--dot:nth-child(2) {
         animation-delay: 100ms;
     }
 
-    navbar > button:hover .menu--dot:nth-child(3) {
+    nav > button:hover .menu--dot:nth-child(3) {
         animation-delay: 200ms;
     }
 
