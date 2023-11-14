@@ -1,0 +1,131 @@
+.contact--form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    width: clamp(200px, 60%, 520px);  
+}
+
+.contact--form > input,
+.contact--form > textarea {
+    border: 2px solid var(--white-color-reg);
+    background-color: transparent;
+    padding: 12px;
+    font-size: 0.9rem;
+    color: var(--white-color-reg);
+    font-weight: 900;
+}
+
+.contact--form > input::placeholder,
+.contact--form > textarea::placeholder {
+    color: var(--white-color-reg);
+    font-weight: 300;
+}
+
+.contact--form > input {
+    height: 30px;
+}
+
+.contact--form > textarea {
+    height: 120px;
+}
+
+.submit-button {
+    width: 25px;
+    height: 25px;
+    align-self: center;
+    background-color: transparent;
+    position: relative;
+    border: none;
+    cursor: pointer;
+}
+
+.submit-button[disabled] {
+    cursor: default;
+}
+
+.paper-plane-container {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%) rotate(0deg);
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    align-self: center;
+    border-radius: 50%;
+    transform-origin: center;
+    pointer-events: none;
+}
+
+.paper-plane-container::after {
+    content: "Well received. Thank you!";
+    position: absolute;
+    width: max-content;
+    height: fit-content;
+    color: var(--white-color-important);
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 200ms 2s ease-in-out;
+}
+
+.paper-plane-container.submit-button-animate::after {
+    opacity: 1;
+}
+
+.paper-plane-container > img {
+    position: absolute;
+    width: 25px;
+    bottom: 0px;
+    right: 50%;
+    transform: translate(50%) rotate(0deg);
+    transition: all 200ms ease-in-out;
+}
+
+.submit-button:hover .paper-plane-container > img{
+    content:url("../assets/paper-plane-hover.png");
+}
+
+.paper-plane-animate {
+    animation: paper-plane-fly 2s ease-in forwards;
+}
+
+/* .submit-button-container > button:hover {
+    animation: sending 2s ease-in forwards;
+} */
+
+.submit-button-animate {
+    animation: sending 2s linear forwards;
+}
+
+@keyframes paper-plane-fly {
+    0% {
+        transform: scale(1) translate(50%) rotate(0deg);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes sending {
+    0% {
+        transform: translate(-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%) rotate(-360deg);
+    }
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .contact--form > button {
+        align-self: center;
+    }
+}

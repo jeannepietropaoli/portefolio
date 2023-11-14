@@ -1,0 +1,44 @@
+
+.arrow-btn-container {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: max-content;
+    overflow: hidden;
+}
+
+.arrow-btn {
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.arrows-container {
+    position: relative;
+    height: 40px;
+    width: 20px;
+}
+
+.arrows-container > img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    width: auto;
+}
+
+.arrows-container > img:nth-child(2) {
+    transform: translateY(-120%);
+}
+
+.arrow-btn:hover .arrows-container > img:nth-child(1) {
+    animation: moveFirstArrow 1s linear infinite;
+}
+
+.arrow-btn:hover .arrows-container > img:nth-child(2) {
+    animation: moveSecondArrow 1s linear infinite;
+}

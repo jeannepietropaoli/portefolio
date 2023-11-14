@@ -1,0 +1,35 @@
+#techStack {
+    display: flex;
+    gap: 10vh;
+    flex-direction: column;
+}
+
+#techStack::after {
+    content: "";
+    height: 2px;
+    width: 70%;
+    background-color: var(--red-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.techStack--main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4vh;
+    width: 100%;
+    text-align: center;
+}
+
+.stack-container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 200px));
+    gap: 30px;
+    width: 100%;
+    height: fit-content;
+}

@@ -1,0 +1,59 @@
+.circle-progress {
+    animation: empty 1s ease-out forwards;
+}
+
+.rating {
+    position: relative;
+    min-height: 100px;
+    min-width: 100px;
+}
+
+.rating > svg {
+    width: 100%;
+    height: 100%;
+}
+
+.percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.stack--flip-card:hover .circle-progress {
+    animation: progress 800ms ease-out 400ms forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke: rgb(255, 60, 0);
+        stroke-dasharray: 0 100;
+    }
+
+    40% {
+        stroke: orange;
+    }
+
+    100% {
+        stroke: rgb(83, 241, 117);
+        stroke-dasharray: var(--percentage) 100;
+    }
+}
+
+@keyframes empty {
+    0% {
+        stroke: rgb(83, 241, 117);
+        stroke-dasharray: var(--percentage) 100;
+    }
+
+    70% {
+        stroke: orange
+    }
+
+    100% {
+        stroke: rgb(255, 60, 0);
+        stroke-dasharray: 0 100;
+        
+    }
+}

@@ -1,3 +1,7 @@
-.brackets {
-    color: #949494;
+.menu-item > li > a {
+    color : var(--white-color-important);
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: capitalize;
 }

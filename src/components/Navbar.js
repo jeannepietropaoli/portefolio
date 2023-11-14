@@ -1,29 +1,41 @@
 import React from "react";
-import homeLogo from "../assets/home.png";
-import arrow from "../assets/arrow-logo.png";
 import MenuItem from "./MenuItem";
 import "../styles/Navbar.css";
+import PixelBackground from "./PixelBackground";
 
 export default function Navbar(props) {
-    const menuItems = ["Home", "About", "TechStack", "Projects", "Contact"]
-    const [foldMenu, setFoldMenu] = React.useState(true);
+    const menuItems = props.sections;
+    const [menuHidden, setMenuHidden] = React.useState(true);
 
     function scrollToTop(e) {
         e.preventDefault();
         window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    const menuItemsElements = menuItems.map(item => <MenuItem scrollToTop={scrollToTop} itemName={item} />)
+    function toggleMenu() {
+        setMenuHidden(prevState => !prevState)
+    }
+
+    const menuItemsElements = menuItems.map(item => {
+        return <MenuItem scrollToTop={scrollToTop} itemName={item} current={props.currentSection === item} />
+    })
 
     return (
-        <div className={`navbar ${props.isShown ? "" : "hidden"} ${window.scrollY > 0 ? "shadow" : ""}`}>
-            <img src={homeLogo} alt="home link" />
-            <button onClick={() => setFoldMenu(prevState => !prevState)} className={`mobile-menu-btn ${foldMenu ? "" : "unfold"}`}>
-                <div className="arrow-container">
-                    <img src={arrow} />
-                </div>
+        <navbar>
+            {menuHidden && 
+                <button onClick={() => setMenuHidden(false)}>
+                    <span className="menu--dot"></span>
+                    <span className="menu--dot"></span>
+                    <span className="menu--dot"></span>
                 </button>
-            <ul className={`navbar-list ${foldMenu ? "hidden" : ""}`}>{menuItemsElements}</ul>
-        </div>
+            }
+            {!menuHidden && <>
+                <PixelBackground />
+                <button onClick={() => setMenuHidden(true)} id="close-menu">X</button>
+                <ul className="full-page navbar-list">{menuItemsElements}</ul>
+                </>
+            }
+            <ul className={`navbar-list`}>{menuItemsElements}</ul>
+        </navbar>
     )
 }

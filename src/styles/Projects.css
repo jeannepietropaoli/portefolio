@@ -1,0 +1,17 @@
+#projects {
+   display: flex;
+   flex-direction: column;
+   gap: 4vh;
+}
+
+#projects > .section-title {
+    margin-bottom: 6vh;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    align-items: center;
+    margin-bottom: 50px;
+}

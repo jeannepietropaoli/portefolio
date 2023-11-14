@@ -1,0 +1,105 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/color-background.jpg);
+    background-size: cover;
+    box-shadow: inset 0 0 0 10vh rgba(0, 0, 0, 0.6),0 0 5px #1f1f22;
+}
+
+#home::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    bottom: 0px;
+    background: linear-gradient(transparent, var(--black-color-light));
+}
+
+.home--content {
+    color: white;
+    border: 8px solid white;
+    padding: 60px 30px;
+    text-align: justify;
+    width: auto;
+    position: relative;
+    font-weight: bold;
+}
+
+.home--content > h1 {
+    display: flex;
+    justify-content: space-between;
+    font-size : clamp(1rem, 3vw, 2.5rem);
+    overflow: hidden;
+}
+
+.word {
+    animation: appearThroughBottom 0.9s ease-in-out forwards;
+}
+
+.home--content > h1:nth-child(1) .word {
+    visibility: hidden;
+    animation-delay: 0.2s;
+}
+
+.home--content > h1:nth-child(2) .word {
+    visibility: hidden;
+    animation-delay: 0.4s;
+}
+
+.home--content > h1:nth-child(3) .word {
+    visibility: hidden;
+    animation-delay: 0.6s;
+}
+
+.home--content > h1:nth-child(2),
+.home--content > h1:nth-child(3) {
+    font-size : clamp(2rem, 7vw, 5rem);
+}
+
+.arrow-btn-container {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    #home {
+       box-shadow: none;
+    }
+}
+
+@keyframes moveFirstArrow {
+    0% {
+        transform: translateY(0%) translateX(-50%);
+    }
+
+    100% {
+        transform: translateY(120%) translateX(-50%);
+    }
+}
+
+@keyframes moveSecondArrow {
+    0% {
+        transform: translateY(-120%) translateX(-50%);
+    }
+
+    100% {
+        transform: translateY(0%) translateX(-50%);
+    }
+}
+
+@keyframes appearThroughBottom {
+    0% {
+        visibility: visible;
+        transform: translateY(100%);
+    }
+
+    100% {
+        visibility: visible;
+        transform: translateY(0%);
+    }
+}
