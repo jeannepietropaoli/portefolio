@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/portefolio/static/css/main.073c9b0a.css",
-    "main.js": "/portefolio/static/js/main.b7fc9558.js",
-    "static/js/787.34099e4b.chunk.js": "/portefolio/static/js/787.34099e4b.chunk.js",
-    "static/media/logo.svg": "/portefolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/portefolio/static/css/main.cd182430.css",
+    "main.js": "/portefolio/static/js/main.ba975eac.js",
+    "static/media/portrait-paint.svg": "/portefolio/static/media/portrait-paint.b8fdeb0f1d03f1862b68412bc159c9f1.svg",
+    "static/media/cv-app-screenshot.png": "/portefolio/static/media/cv-app-screenshot.539796f497a6cf952c1f.png",
+    "static/media/color-background.jpg": "/portefolio/static/media/color-background.a34d2946b33c6fa621c2.jpg",
+    "static/media/weather-app-screenshot.png": "/portefolio/static/media/weather-app-screenshot.c133764dc5af189f69b0.png",
+    "static/media/rating-widget-video.mp4": "/portefolio/static/media/rating-widget-video.6841b8c19f9636803276.mp4",
+    "static/media/to-do-list-screenshot.png": "/portefolio/static/media/to-do-list-screenshot.12267c1973e0195e82c1.png",
+    "static/media/react.png": "/portefolio/static/media/react.66e10dd88d9314b99c2d.png",
+    "static/media/live.png": "/portefolio/static/media/live.042da6193974e9a20ced.png",
+    "static/media/paper-plane-hover.png": "/portefolio/static/media/paper-plane-hover.b579fff84993ce8478c2.png",
+    "static/media/paper-plane-2.png": "/portefolio/static/media/paper-plane-2.940d9feb2bb0325e97b0.png",
+    "static/media/github-dark.png": "/portefolio/static/media/github-dark.47055b3366c515c8309e.png",
+    "static/media/css3.png": "/portefolio/static/media/css3.2a7daffa85bb2869d26d.png",
+    "static/media/js.png": "/portefolio/static/media/js.70fde9fe3aaac60ce676.png",
+    "static/media/github.png": "/portefolio/static/media/github.7ecb8bf385ce19734932.png",
     "index.html": "/portefolio/index.html",
-    "main.073c9b0a.css.map": "/portefolio/static/css/main.073c9b0a.css.map",
-    "main.b7fc9558.js.map": "/portefolio/static/js/main.b7fc9558.js.map",
-    "787.34099e4b.chunk.js.map": "/portefolio/static/js/787.34099e4b.chunk.js.map"
+    "static/media/npm.svg": "/portefolio/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
+    "main.cd182430.css.map": "/portefolio/static/css/main.cd182430.css.map",
+    "main.ba975eac.js.map": "/portefolio/static/js/main.ba975eac.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.b7fc9558.js"
+    "static/css/main.cd182430.css",
+    "static/js/main.ba975eac.js"
   ]
 }
