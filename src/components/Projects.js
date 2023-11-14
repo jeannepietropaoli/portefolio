@@ -7,6 +7,7 @@ import weatherAppScreenshot from "../assets/weather-app-screenshot.png";
 import ratinWidgetVideo from "../assets/rating-widget-video.mp4";
 import reactIcon from "../assets/react.png";
 import Project from "./Project";
+import SectionArrow from "./SectionArrow";
 
 export default function Projects(props) {
     const projects = [
@@ -50,7 +51,10 @@ export default function Projects(props) {
     
     return (
         <section ref={props.reference} id="projects" style={{"--scroll-percentage": props.scrollPercentage}}>
-            <span className="section-number">04</span>
+            <div class="section-navigation-container">
+                <SectionArrow previousSectionRef={props.previousSectionRef} nextSectionRef={props.nextSectionRef} color="grey" />
+                <span className="section-number">04</span>
+            </div>
             <h2 className="section-title">Projects</h2>
             <p>Here are some of my projects ...</p>
             <div class="projects-container">

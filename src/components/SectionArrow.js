@@ -1,5 +1,8 @@
 import React from "react";
-import downArrow from "../assets/down-arrow.png";
+import downArrowWhite from "../assets/down-arrow-white.png";
+import downArrowGrey from "../assets/down-arrow-grey.png";
+import upArrowWhite from "../assets/up-arrow-white.png";
+import upArrowGrey from "../assets/up-arrow-grey.png";
 import "../styles/SectionArrow.css";
 
 export default function SectionArrow(props) {
@@ -19,8 +22,8 @@ export default function SectionArrow(props) {
             props.previousSectionRef && 
                 <button className="previous arrow-btn" onClick={() => goToPreviousSection(props.previousSectionRef)}>
                     <div class="arrows-container">
-                        <img className="up-arrow-img" src={downArrow}/>
-                        <img className="up-arrow-img" src={downArrow}/>
+                        <img className="up-arrow-img" src={props.color==="grey" ? upArrowGrey : upArrowWhite}/>
+                        <img className="up-arrow-img" src={props.color==="grey" ? upArrowGrey : upArrowWhite}/>
                     </div>
                 </button>
             }
@@ -28,8 +31,8 @@ export default function SectionArrow(props) {
                 props.nextSectionRef && 
                     <button className="next arrow-btn" onClick={() => goToNextSection(props.nextSectionRef)}>
                         <div class="arrows-container">
-                            <img className="down-arrow-img" src={downArrow}/>
-                            <img className="down-arrow-img" src={downArrow}/>
+                            <img className="down-arrow-img" src={props.color==="grey" ? downArrowGrey : downArrowWhite}/>
+                            <img className="down-arrow-img" src={props.color==="grey" ? downArrowGrey : downArrowWhite}/>
                         </div>
                     </button>
             }

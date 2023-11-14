@@ -1,19 +1,16 @@
-
 .arrow-btn-container {
-    position: absolute;
-    top: 110%;
-    left: 50%;
-    transform: translateX(-50%);
     height: 40px;
     width: max-content;
     overflow: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 5px;
 }
 
 .arrow-btn {
     height: 100%;
     background-color: transparent;
     border: none;
-    cursor: pointer;
 }
 
 .arrows-container {
@@ -28,17 +25,68 @@
     left: 50%;
     transform: translateX(-50%);
     height: 100%;
+    padding: 0 10px;
     width: auto;
+    cursor: pointer;
 }
 
 .arrows-container > img:nth-child(2) {
     transform: translateY(-120%);
 }
 
-.arrow-btn:hover .arrows-container > img:nth-child(1) {
-    animation: moveFirstArrow 1s linear infinite;
+.arrow-btn:hover .down-arrow-img:nth-child(1) {
+    animation: moveFirstArrowDown 1s linear infinite;
 }
 
-.arrow-btn:hover .arrows-container > img:nth-child(2) {
-    animation: moveSecondArrow 1s linear infinite;
+.arrow-btn:hover .down-arrow-img:nth-child(2) {
+    animation: moveSecondArrowDown 1s linear infinite;
+}
+
+.arrow-btn:hover .up-arrow-img:nth-child(1) {
+    animation: moveFirstArrowUp 1s linear infinite;
+}
+
+.arrow-btn:hover .up-arrow-img:nth-child(2) {
+    animation: moveSecondArrowUp 1s linear infinite;
+}
+
+
+@keyframes moveFirstArrowDown {
+    0% {
+        transform: translateY(0%) translateX(-50%);
+    }
+
+    100% {
+        transform: translateY(120%) translateX(-50%);
+    }
+}
+
+@keyframes moveSecondArrowDown {
+    0% {
+        transform: translateY(-120%) translateX(-50%);
+    }
+
+    100% {
+        transform: translateY(0%) translateX(-50%);
+    }
+}
+
+@keyframes moveFirstArrowUp {
+    0% {
+        transform: translateY(0%) translateX(-50%);
+    }
+
+    100% {
+        transform: translateY(-120%) translateX(-50%);
+    }
+}
+
+@keyframes moveSecondArrowUp {
+    0% {
+        transform: translateY(120%) translateX(-50%);
+    }
+
+    100% {
+        transform: translateY(0%) translateX(-50%);
+    }
 }

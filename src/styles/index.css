@@ -22,13 +22,3 @@
   margin: 0;
   font-family: 'Inconsolata', monospace;
 }
-
-body {
-  margin: 0;
-  /* background-color: var(--blue-color); */
-  /* background-color: var(--dark-grey-color);
-  background-image: url(../assets/color-background.jpg);
-    background-size: stretch; */
-
-  font-family: sans-serif;
-}

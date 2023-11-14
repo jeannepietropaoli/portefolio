@@ -1,12 +1,16 @@
 import React from "react";
 import "../styles/About.css";
 import portrait from "../assets/portrait-paint.svg";
-import "../styles/Section.css"
+import "../styles/Section.css";
+import SectionArrow from "./SectionArrow";
 
 export default function About(props) {
     return (
         <section ref={props.reference} id="about" style={{"--scroll-percentage": props.scrollPercentage}}>
-            <span className="section-number">02</span>
+            <div class="section-navigation-container">
+                <SectionArrow previousSectionRef={props.previousSectionRef} nextSectionRef={props.nextSectionRef} color="grey" />
+                <span className="section-number">02</span>
+            </div>
             <div className="about--text">
                 <h2 className="section-title">About</h2>
                 <div className="about--text-main">

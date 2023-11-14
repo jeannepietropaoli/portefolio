@@ -9,14 +9,19 @@ import git from "../assets/git.png";
 import react from "../assets/react.png";
 import "../styles/Section.css"
 import FlipCard from "./FlipCard";
+import SectionArrow from "./SectionArrow";
 
 export default function TechStack(props) {
     return (
         <section ref={props.reference} id="techStack" style={{"--scroll-percentage": props.scrollPercentage}}>
-            <span className="section-number">03</span>
+            <div class="section-navigation-container">
+                <SectionArrow previousSectionRef={props.previousSectionRef} nextSectionRef={props.nextSectionRef} color="grey" />
+                <span className="section-number">03</span>
+            </div>
             <h2 className="section-title">Tech Stack</h2>
             <div className="techStack--main-content">
-                <p>Here are the technologies I am used to.</p>
+                <p>Here are the technologies I am used to. You can hover or click on the cards to discover the details.</p>
+                <p>The animated percentage circles on these cards are more about visual engagement than precise skill measurement. They serve as an interactive, eye-catching element, offering a glimpse into my familiarity with various technologies and my keen interest on interactive UI designs.</p>
                 <div class="stack-container">
                     <FlipCard name="HTML" url={html} percentage="85" />
                     <FlipCard name="CSS" url={css} percentage="70" />
@@ -26,7 +31,7 @@ export default function TechStack(props) {
                     <FlipCard name="Git" url={git} percentage="60" />
                     <FlipCard name="npm" url={npm} percentage="60" />
              </div>
-                <p>Always down for a challenge in another tech though !</p>
+                <p>I am always down for a challenge in another tech though !</p>
             </div>
         </section>
     )

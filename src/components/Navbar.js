@@ -7,17 +7,12 @@ export default function Navbar(props) {
     const menuItems = props.sections;
     const [menuHidden, setMenuHidden] = React.useState(true);
 
-    function scrollToTop(e) {
-        e.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
     function toggleMenu() {
         setMenuHidden(prevState => !prevState)
     }
 
     const menuItemsElements = menuItems.map(item => {
-        return <MenuItem scrollToTop={scrollToTop} itemName={item} current={props.currentSection === item} />
+        return <MenuItem itemName={item} current={props.currentSection === item} closeMenu={() => setMenuHidden(true)} />
     })
 
     return (

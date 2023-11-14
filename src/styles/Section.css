@@ -8,13 +8,18 @@ section {
     color: var(--white-color-reg);
 }
 
-.section-number {
-    color: #6FE7DD;
-    color: white;
-    opacity: 0.2;
+.section-navigation-container {
+    display: flex;
+    align-items: flex-end;
+    width: max-content;
     position: absolute;
     bottom: 0px;
     right: 10px;
+}
+
+.section-number {   
+    color: white;
+    opacity: 0.2;
     font-size: 150px;
     font-weight: 500;
     text-decoration: underline;

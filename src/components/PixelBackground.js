@@ -13,19 +13,7 @@ export default function PixelBackground() {
             let randomIndex = Math.floor(Math.random() * pixels.length);
             pixels[randomIndex].style.animationDelay = `${count * 0.004}s`;
             pixels.splice(randomIndex, 1);
-            count = count + 1
-        }
-    }
-
-    function pixelateFromTopRight() {
-        const pixels = Array.from(document.querySelectorAll('.pixel'));
-
-        let count = 0;
-        while(pixels.length) {
-            let randomIndex = Math.floor(Math.random() * pixels.length);
-            pixels[randomIndex].style.animationDelay = `${count * 0.006}s`;
-            pixels.splice(randomIndex, 1);
-            count = count + 1
+            count = count + 1;
         }
     }
 
@@ -35,7 +23,7 @@ export default function PixelBackground() {
             setNumberOfCols(Math.ceil(window.innerWidth / pixelSize));
         }
         window.addEventListener('resize', handleResize);
-        pixelate()
+        pixelate();
         return () => window.removeEventListener('resize', handleResize);
     }, [])
 

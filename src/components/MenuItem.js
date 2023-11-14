@@ -8,11 +8,17 @@ export default function MenuItem(props) {
         setAnchor(document.getElementById(props.itemName));
     }, [])
 
+    function scrollToTop(e) {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
     function handleClick(e) {
         e.preventDefault();
         props.itemName === "Home" ?
-            props.scrollToTop(e) :
+            scrollToTop(e) :
             anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        props.closeMenu();
     }
 
     return (

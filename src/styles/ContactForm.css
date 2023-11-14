@@ -96,10 +96,6 @@
     animation: paper-plane-fly 2s ease-in forwards;
 }
 
-/* .submit-button-container > button:hover {
-    animation: sending 2s ease-in forwards;
-} */
-
 .submit-button-animate {
     animation: sending 2s linear forwards;
 }

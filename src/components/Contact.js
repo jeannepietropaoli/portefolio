@@ -5,11 +5,15 @@ import githubIcon from "../assets/github.png";
 import linkedinIcon from "../assets/linkedin.png";
 import contactBackground from "../assets/color-background.jpg";
 import ContactForm from "./ContactForm";
+import SectionArrow from "./SectionArrow";
 
 export default function Contact(props) {
     return (
         <section ref={props.reference} id="contact" style={{"--scroll-percentage": props.scrollPercentage}}>
-            <span className="section-number">05</span>
+            <div class="section-navigation-container">
+                <SectionArrow previousSectionRef={props.previousSectionRef} color="white" />
+                <span className="section-number">05</span>
+            </div>
             <img className="contact--background-img" src={contactBackground}/>
             <h2 className="section-title">Contact</h2>
             <div class="contact--main">

@@ -58,7 +58,7 @@
     font-size : clamp(2rem, 7vw, 5rem);
 }
 
-.arrow-btn-container {
+#home .arrow-btn-container {
     position: absolute;
     top: 110%;
     left: 50%;
@@ -69,26 +69,6 @@
 @media (max-aspect-ratio: 1/1) {
     #home {
        box-shadow: none;
-    }
-}
-
-@keyframes moveFirstArrow {
-    0% {
-        transform: translateY(0%) translateX(-50%);
-    }
-
-    100% {
-        transform: translateY(120%) translateX(-50%);
-    }
-}
-
-@keyframes moveSecondArrow {
-    0% {
-        transform: translateY(-120%) translateX(-50%);
-    }
-
-    100% {
-        transform: translateY(0%) translateX(-50%);
     }
 }
 
