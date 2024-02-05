@@ -1,7 +1,3 @@
-# Personal Portfolio
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ## Live version
 
 http://jeannepietropaoli.github.io/portefolio/
@@ -10,7 +6,7 @@ http://jeannepietropaoli.github.io/portefolio/
 
 Project to practice skills learned inside The Odin Project's Advanced HTML and CSS Course and specifically the responsive section : https://www.theodinproject.com/paths/full-stack-javascript/courses/advanced-html-and-css
 
-The goal of this project is to create a responsive online portfolio.
+The goal of this project is to create a responsive online portfolio with React.
 
 ## Skills to practice
 
