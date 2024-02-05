@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/portefolio/static/css/main.cd182430.css",
-    "main.js": "/portefolio/static/js/main.ba975eac.js",
-    "static/media/portrait-paint.svg": "/portefolio/static/media/portrait-paint.b8fdeb0f1d03f1862b68412bc159c9f1.svg",
+    "main.css": "/portefolio/static/css/main.a6755cd3.css",
+    "main.js": "/portefolio/static/js/main.06d47a3e.js",
     "static/media/cv-app-screenshot.png": "/portefolio/static/media/cv-app-screenshot.539796f497a6cf952c1f.png",
     "static/media/color-background.jpg": "/portefolio/static/media/color-background.a34d2946b33c6fa621c2.jpg",
     "static/media/weather-app-screenshot.png": "/portefolio/static/media/weather-app-screenshot.c133764dc5af189f69b0.png",
     "static/media/rating-widget-video.mp4": "/portefolio/static/media/rating-widget-video.6841b8c19f9636803276.mp4",
+    "static/media/profile-illustration-guitar.jpg": "/portefolio/static/media/profile-illustration-guitar.48ec2fe49325e4452b80.jpg",
     "static/media/to-do-list-screenshot.png": "/portefolio/static/media/to-do-list-screenshot.12267c1973e0195e82c1.png",
     "static/media/react.png": "/portefolio/static/media/react.66e10dd88d9314b99c2d.png",
     "static/media/live.png": "/portefolio/static/media/live.042da6193974e9a20ced.png",
@@ -18,11 +18,11 @@
     "static/media/github.png": "/portefolio/static/media/github.7ecb8bf385ce19734932.png",
     "index.html": "/portefolio/index.html",
     "static/media/npm.svg": "/portefolio/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
-    "main.cd182430.css.map": "/portefolio/static/css/main.cd182430.css.map",
-    "main.ba975eac.js.map": "/portefolio/static/js/main.ba975eac.js.map"
+    "main.a6755cd3.css.map": "/portefolio/static/css/main.a6755cd3.css.map",
+    "main.06d47a3e.js.map": "/portefolio/static/js/main.06d47a3e.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd182430.css",
-    "static/js/main.ba975eac.js"
+    "static/css/main.a6755cd3.css",
+    "static/js/main.06d47a3e.js"
   ]
 }
