@@ -6,6 +6,7 @@ section {
     padding: 40px 60px;
     position: relative;
     color: var(--white-color-reg);
+    text-align: center;
 }
 
 .section-navigation-container {

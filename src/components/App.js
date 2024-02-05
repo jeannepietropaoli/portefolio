@@ -8,6 +8,9 @@ import Projects from './Projects';
 import Contact from './Contact';
 import useSectionScrollPercentage from './useSectionScrollPercentage';
 
+// in navbar integrate pourcentage to track advancement
+
+
 function App() {
   const [scrollY, setScrollY] = React.useState(window.scrollY);
   const aboutSectionRef = React.useRef(null);
@@ -79,7 +82,7 @@ function App() {
       <Contact 
         reference={contactSectionRef} 
         scrollPercentage={sectionsInfos.contact.scrollPercentage} 
-        previousSectionRef={projectsSectionRef}
+        previousSectionRef={homeSectionRef}
       />
     </div>
   );

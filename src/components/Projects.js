@@ -57,6 +57,7 @@ export default function Projects(props) {
             </div>
             <h2 className="section-title">Projects</h2>
             <p>Here are some of my projects ...</p>
+            <p>Optimal viewing experience is on desktop for these projects. Responsive versions are in development and will be identified on each project's card when available.</p>
             <div className="projects-container">
                     {projects.map((project, index) => <Project {...project} key={index} /> )}
                 </div>

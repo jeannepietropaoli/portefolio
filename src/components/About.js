@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import portrait from "../assets/portrait-paint.svg";
+import portrait from "../assets/profile-illustration-guitar.jpg";
 import "../styles/Section.css";
 import SectionArrow from "./SectionArrow";
 

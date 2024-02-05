@@ -4,6 +4,7 @@
     position: relative;
     min-height: 80vh !important;
     color: var(--white-color-reg);
+    text-align: left;
 }
 
 .contact--background-img {
