@@ -15,8 +15,8 @@ export default function Projects(props) {
             title : "Online CV builder",
             description : "An online tool to create resumes through a pre-built template. Just edit the content of each section to create yours.",
             techStack : "This project was built using React",
-            liveLink : "https://jeannepietropaoli.github.io/cv-app/",
-            githubRepo : "https://github.com/jeannepietropaoli/cv-app",
+            liveLink : "https://online-cv-builder-app.netlify.app/",
+            githubRepo : "https://github.com/jeannepietropaoli/cv-builder-v3",
             screenshot : cvAppScreenshot
         },
         {
