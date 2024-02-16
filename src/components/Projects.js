@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Projects.css";
 import "../styles/Section.css"
-import cvAppScreenshot from "../assets/cv-app-screenshot.png";
+import cvAppScreenshot from "../assets/cv-app-screenshot-v2.png";
 import toDoListScreenshot from "../assets/to-do-list-screenshot.png";
 import weatherAppScreenshot from "../assets/weather-app-screenshot.png";
 import ratinWidgetVideo from "../assets/rating-widget-video.mp4";
