@@ -5,6 +5,7 @@ import cvAppScreenshot from "../assets/cv-app-screenshot-v2.png";
 import toDoListScreenshot from "../assets/to-do-list-screenshot.png";
 import weatherAppScreenshot from "../assets/weather-app-screenshot.png";
 import ratinWidgetVideo from "../assets/rating-widget-video.mp4";
+import ramenAppScreenshot from "../assets/whatsoup-screenshot.jpeg";
 import reactIcon from "../assets/react.png";
 import Project from "./Project";
 import SectionArrow from "./SectionArrow";
@@ -46,6 +47,14 @@ export default function Projects(props) {
             liveLink : "http://jeannepietropaoli.github.io/stars-rating-widget/",
             githubRepo : "https://github.com/jeannepietropaoli/stars-rating-widget",
             videoshot: ratinWidgetVideo
+        },
+        {
+            title : "What'soup?",
+            description : "Fun and interactive ramen creation app. Choose your ingredients and create your own ramen bowl, save your recipes and get inspired.",
+            techStack : "This project was built using Html, Tailwind CSS, Sass and JavaScript (that was the challenge but the React version will come out soon with more features and more efficient code!",
+            liveLink : "https://jeannepietropaoli.github.io/Integration_web_PWA_Jeanne_Pietropaoli/",
+            githubRepo : "https://github.com/jeannepietropaoli/Integration_web_PWA_Jeanne_Pietropaoli",
+            screenshot: ramenAppScreenshot
         }
     ]
     
