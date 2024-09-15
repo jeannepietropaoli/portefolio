@@ -7,6 +7,9 @@ import npm from "../assets/npm.svg";
 import github from "../assets/github-dark.png";
 import git from "../assets/git.png";
 import react from "../assets/react.png";
+import tailwind from "../assets/tailwind-logo.png";
+import mysql from "../assets/mysql-logo.png";
+import php from "../assets/php-logo.png";
 import "../styles/Section.css"
 import FlipCard from "./FlipCard";
 import SectionArrow from "./SectionArrow";
@@ -24,12 +27,15 @@ export default function TechStack(props) {
                 <p>The animated percentage circles on these cards are more about visual engagement than precise skill measurement. They serve as an interactive, eye-catching element, offering a glimpse into my familiarity with various technologies and my keen interest on interactive UI designs.</p>
                 <div className="stack-container">
                     <FlipCard name="HTML" url={html} percentage="85" />
-                    <FlipCard name="CSS" url={css} percentage="70" />
+                    <FlipCard name="CSS" url={css} percentage="85" />
                     <FlipCard name="JavaScript" url={js} percentage="70" />
-                    <FlipCard name="React" url={react} percentage="50" />
-                    <FlipCard name="Github" url={github} percentage="50" />
-                    <FlipCard name="Git" url={git} percentage="60" />
-                    <FlipCard name="npm" url={npm} percentage="60" />
+                    <FlipCard name="React" url={react} percentage="70" />
+                    <FlipCard name="Github" url={github} percentage="65" />
+                    <FlipCard name="Git" url={git} percentage="65" />
+                    <FlipCard name="npm" url={npm} percentage="70" />
+                    <FlipCard name="Tailwind" url={tailwind} percentage="85" />
+                    <FlipCard name="MySQL" url={mysql} percentage="40" />
+                    <FlipCard name="PHP" url={php} percentage="35" />
              </div>
                 <p>I am always down for a challenge in another tech though !</p>
             </div>
