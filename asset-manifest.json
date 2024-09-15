@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/portefolio/static/css/main.a6755cd3.css",
-    "main.js": "/portefolio/static/js/main.b3413210.js",
+    "main.js": "/portefolio/static/js/main.05e27ff7.js",
     "static/media/whatsoup-screenshot.jpeg": "/portefolio/static/media/whatsoup-screenshot.bd0522a8e01606b983f7.jpeg",
     "static/media/color-background.jpg": "/portefolio/static/media/color-background.a34d2946b33c6fa621c2.jpg",
     "static/media/cv-app-screenshot-v2.png": "/portefolio/static/media/cv-app-screenshot-v2.b7c3895e5d2a07b234d8.png",
     "static/media/weather-app-screenshot.png": "/portefolio/static/media/weather-app-screenshot.c133764dc5af189f69b0.png",
     "static/media/rating-widget-video.mp4": "/portefolio/static/media/rating-widget-video.6841b8c19f9636803276.mp4",
     "static/media/profile-illustration-guitar.jpg": "/portefolio/static/media/profile-illustration-guitar.48ec2fe49325e4452b80.jpg",
+    "static/media/mysql-logo.png": "/portefolio/static/media/mysql-logo.0391ad60aafcd6b4359e.png",
     "static/media/to-do-list-screenshot.png": "/portefolio/static/media/to-do-list-screenshot.12267c1973e0195e82c1.png",
     "static/media/react.png": "/portefolio/static/media/react.66e10dd88d9314b99c2d.png",
     "static/media/live.png": "/portefolio/static/media/live.042da6193974e9a20ced.png",
     "static/media/paper-plane-hover.png": "/portefolio/static/media/paper-plane-hover.b579fff84993ce8478c2.png",
     "static/media/paper-plane-2.png": "/portefolio/static/media/paper-plane-2.940d9feb2bb0325e97b0.png",
+    "static/media/tailwind-logo.png": "/portefolio/static/media/tailwind-logo.9bff1085bc1e2a0cff89.png",
     "static/media/github-dark.png": "/portefolio/static/media/github-dark.47055b3366c515c8309e.png",
     "static/media/css3.png": "/portefolio/static/media/css3.2a7daffa85bb2869d26d.png",
     "static/media/js.png": "/portefolio/static/media/js.70fde9fe3aaac60ce676.png",
@@ -20,10 +22,10 @@
     "index.html": "/portefolio/index.html",
     "static/media/npm.svg": "/portefolio/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
     "main.a6755cd3.css.map": "/portefolio/static/css/main.a6755cd3.css.map",
-    "main.b3413210.js.map": "/portefolio/static/js/main.b3413210.js.map"
+    "main.05e27ff7.js.map": "/portefolio/static/js/main.05e27ff7.js.map"
   },
   "entrypoints": [
     "static/css/main.a6755cd3.css",
-    "static/js/main.b3413210.js"
+    "static/js/main.05e27ff7.js"
   ]
 }
