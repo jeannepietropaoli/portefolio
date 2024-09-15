@@ -85,7 +85,7 @@ export default function ContactForm(props) {
     function sendEmail(event) {
         const form = event.currentTarget;
         event.preventDefault();
-        emailjs.sendForm("service_l7d06az", "template_izdp388", form, "vPC7QtDI-tQ29CDzB")
+        emailjs.sendForm("service_h2q1gxf", "template_izdp388", form, "vPC7QtDI-tQ29CDzB")
           .then((result) => {
               triggerSubmitButtonAnimation();
                 setIsSent(true);
