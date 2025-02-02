@@ -2,6 +2,7 @@ import React from "react";
 import MenuItem from "./MenuItem";
 import "../styles/Navbar.css";
 import PixelBackground from "./PixelBackground";
+import LanguageSwicth from "./LanguageSwitch";
 
 export default function Navbar(props) {
     const menuItems = props.sections;
@@ -31,6 +32,7 @@ export default function Navbar(props) {
                 </>
             }
             <ul className={`navbar-list`}>{menuItemsElements}</ul>
+            <LanguageSwicth></LanguageSwicth>
         </nav>
     )
 }

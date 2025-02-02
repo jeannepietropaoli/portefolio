@@ -22,3 +22,7 @@
   margin: 0;
   font-family: 'Inconsolata', monospace;
 }
+
+.hidden {
+  display: none;
+}

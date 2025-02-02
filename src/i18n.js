@@ -52,3 +52,6 @@ i18n
   });
 
 export default i18n;
+
+// resterait a implementer un language switch (input option)
+// build le projet

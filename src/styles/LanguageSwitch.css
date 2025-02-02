@@ -1,0 +1,17 @@
+.dropdown {
+    position: relative;
+    margin-left: 50px;
+    padding: 0px 10px;
+    padding-bottom: 4px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--white-color-important);
+    color: var(--white-color-important);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.dropdown__option {
+    color: var(--dark-grey-color);
+    border-radius: 30px;
+}
