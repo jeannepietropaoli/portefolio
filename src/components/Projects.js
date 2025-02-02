@@ -50,15 +50,6 @@ export default function Projects(props) {
             done: true
         },
         {
-            title : t("projects.project4.title"),
-            description : t("projects.project4.description"),
-            techStack : t("projects.project4.techstack"),
-            liveLink : "http://jeannepietropaoli.github.io/stars-rating-widget/",
-            githubRepo : "https://github.com/jeannepietropaoli/stars-rating-widget",
-            videoshot: ratinWidgetVideo,
-            done: true
-        },
-        {
             title : t("projects.project5.title"),
             description : t("projects.project5.description"),
             techStack : t("projects.project5.techstack"),
