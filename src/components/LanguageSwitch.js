@@ -13,7 +13,7 @@ export default function LanguageSwicth() {
     }
    
     return (
-        <div>
+        <div className="lang-switch">
             <label className="hidden" htmlFor="lang">Language</label>
             <select className="dropdown" name="lang" id="lang" onChange={switchLanguage} value={i18n.language}>
                 <option className="dropdown__option" value="fr">Français</option>

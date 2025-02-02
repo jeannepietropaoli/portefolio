@@ -99,6 +99,11 @@
     gap: 5px;
 }
 
+.project--links > a:hover {
+    color: rgb(207, 5, 5);
+    transition: all ease-in-out 150ms;
+}
+
 .project--links > a:nth-child(3) {
     width: min-content;
     text-align: center;
@@ -119,6 +124,18 @@
     color: #E4626C;
     font-weight: 800;
 }
+
+.project__tag {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: red;
+    padding: 3px 10px;
+    color: var(--white-color-important);
+    border-radius: 10px;
+    font-size: 14px;
+}
+
 
 @media (max-width: 700px) {
     .project {

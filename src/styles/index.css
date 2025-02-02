@@ -23,6 +23,11 @@
   font-family: 'Inconsolata', monospace;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .hidden {
   display: none;
 }

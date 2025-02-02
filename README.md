@@ -20,6 +20,7 @@ The goal of this project is to create a responsive online portfolio with React.
 - Multiple sections to get to know me : about, techstack, projects.
 - Showcase of past projects with links to live versions or code repositories.
 - Contact section with a convenient form for easy communication.
+- Language swicth (fr/en) available
 - Interactive design features : 
     - Progress gauge for each section, responsive to scrolling.
     - Interactive Flip-cards highlighting the Techstack section.

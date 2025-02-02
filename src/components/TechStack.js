@@ -10,6 +10,8 @@ import react from "../assets/react.png";
 import tailwind from "../assets/tailwind-logo.png";
 import mysql from "../assets/mysql-logo.png";
 import php from "../assets/php-logo.png";
+import vuejs from "../assets/vuejs-logo.png";
+import angular from "../assets/angular.svg";
 import "../styles/Section.css"
 import FlipCard from "./FlipCard";
 import SectionArrow from "./SectionArrow";
@@ -33,12 +35,14 @@ export default function TechStack(props) {
                     <FlipCard name="CSS" url={css} percentage="85" />
                     <FlipCard name="JavaScript" url={js} percentage="70" />
                     <FlipCard name="React" url={react} percentage="70" />
-                    <FlipCard name="Github" url={github} percentage="65" />
-                    <FlipCard name="Git" url={git} percentage="65" />
-                    <FlipCard name="npm" url={npm} percentage="70" />
+                    <FlipCard name="Vue" url={vuejs} percentage="70" />
+                    <FlipCard name="Angular" url={angular} percentage="45" />
                     <FlipCard name="Tailwind" url={tailwind} percentage="85" />
                     <FlipCard name="MySQL" url={mysql} percentage="40" />
                     <FlipCard name="PHP" url={php} percentage="35" />
+                    <FlipCard name="Github" url={github} percentage="65" />
+                    <FlipCard name="Git" url={git} percentage="65" />
+                    <FlipCard name="npm" url={npm} percentage="70" />
              </div>
              <p>{t("paragraphs.p3")}</p>
             </div>

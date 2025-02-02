@@ -1,3 +1,7 @@
+.lang-switch {
+    z-index: 2;
+}
+
 .dropdown {
     position: relative;
     margin-left: 50px;

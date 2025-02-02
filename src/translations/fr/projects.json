@@ -28,6 +28,19 @@
             "title": "What'soup ?",
             "description": "Application ludique et interactive de création de ramen. Choisissez vos ingrédients et créez votre propre bol de ramen, enregistrez vos recettes et inspirez-vous.",
             "techstack": "Ce projet a été réalisé avec HTML, Tailwind CSS, Sass et JavaScript (c'était le défi, mais la version React arrivera bientôt avec plus de fonctionnalités et un code plus efficace !)"
+        },
+        "project6": {
+            "title": "Inspiré de Spotify",
+            "description": "Une plateforme pour explorer, gérer et organiser vos playlists et chansons favorites.",
+            "techstack": "Ce projet est réalisé avec Angular et Angular Material pour le front-end, et PHP et mySQL pour le back-end."
+        },
+        "project7": {
+            "title": "Gestion des activités - centre de loisirs",
+            "description": "Site de gestion des activités d'un centre de loisirs: utilisateurs, création d'activités, réservations...",
+            "techstack": "Ce projet est réalisé avec VueJS, et TailwindCSS le front-end, et PHP, mySQL et Firebase pour le back-end."
         }
+    },
+    "tags": {
+        "wip": "Developpement en cours"
     }
 }

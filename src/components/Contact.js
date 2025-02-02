@@ -22,7 +22,7 @@ export default function Contact(props) {
             <div className="contact--main">
                 <div className="contact--content">
                     <p>{t("part1")}</p>
-                    <p>{t("part2")}</p>
+                    <p>{t("part2")}<a href="mailto:pietropaolijeanne@gmail.com">pietropaolijeanne@gmail.com</a></p>
                     <div className="social-networks-container">
                     <p>{t("part3")}</p>
                         <div className="social-networks-icons">

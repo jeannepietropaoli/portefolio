@@ -28,6 +28,19 @@
             "title": "What'soup?",
             "description": "Fun and interactive ramen creation app. Choose your ingredients and create your own ramen bowl, save your recipes and get inspired.",
             "techstack": "This project was built using Html, Tailwind CSS, Sass and JavaScript (that was the challenge but the React version will come out soon with more features and more efficient code!"
+        },
+        "project6": {
+            "title": "Spotify inspired",
+            "description": "A platform to explore, manage, and organize your favorite playlists and songs",
+            "techstack": "This project is built using Angular and Angular Material for the front-end, and PHP and mySQL for the backend"
+        },
+        "project7": {
+        "title": "Activity Management - Recreation Center",
+        "description": "Website for managing the activities of a recreation center: users, activity creation, bookings...",
+        "techstack": "This project is built with VueJS and TailwindCSS for the front-end, and PHP, mySQL and Firebase for the back-end."
         }
+    },
+    "tags": {
+        "wip": "WIP"
     }
 }
