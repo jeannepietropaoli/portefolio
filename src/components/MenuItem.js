@@ -28,7 +28,7 @@ export default function MenuItem(props) {
                     onClick={handleClick}
                     aria-label={`Scroll to ${props.itemName}`}
                 >
-                    {`${props.itemName}`}
+                    {`${props.itemDisplayName}`}
                 </a>
             </li>
     )

@@ -1,0 +1,33 @@
+{
+    "title": "Projets",
+    "paragraphs": {
+        "p1": "Voici quelques-uns de mes projets ..."
+    },
+    "projects": {
+        "project1": {
+            "title": "Créateur de CV en ligne",
+            "description": "Un outil en ligne pour créer des CV à l'aide d'un modèle pré-construit. Il suffit de modifier le contenu de chaque section pour créer le vôtre.",
+            "techstack": "Ce projet a été réalisé avec React"
+        },
+        "project2": {
+            "title": "Liste de tâches",
+            "description": "Application interactive de to-dos pour suivre vos tâches quotidiennes de manière organisée et visuelle.",
+            "techstack": "Ce projet a été réalisé avec JavaScript, HTML et CSS"
+        },
+        "project3": {
+            "title": "Application Météo",
+            "description": "Site de prévisions météo utilisant une API pour récupérer des données du monde entier. Il suffit de chercher votre ville !",
+            "techstack": "Ce projet a été réalisé avec JavaScript, HTML et CSS"
+        },
+        "project4": {
+            "title": "Widget de notation par étoiles",
+            "description": "Petit widget animé de notation par étoiles qui compile les scores et utilise des SVG pour les afficher.",
+            "techstack": "Ce projet a été réalisé avec React"
+        },
+        "project5": {
+            "title": "What'soup ?",
+            "description": "Application ludique et interactive de création de ramen. Choisissez vos ingrédients et créez votre propre bol de ramen, enregistrez vos recettes et inspirez-vous.",
+            "techstack": "Ce projet a été réalisé avec HTML, Tailwind CSS, Sass et JavaScript (c'était le défi, mais la version React arrivera bientôt avec plus de fonctionnalités et un code plus efficace !)"
+        }
+    }
+}

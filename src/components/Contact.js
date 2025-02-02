@@ -6,8 +6,11 @@ import linkedinIcon from "../assets/linkedin.png";
 import contactBackground from "../assets/color-background.jpg";
 import ContactForm from "./ContactForm";
 import SectionArrow from "./SectionArrow";
+import { useTranslation } from "react-i18next";
 
 export default function Contact(props) {
+    const { t } = useTranslation('contact');
+
     return (
         <section ref={props.reference} id="contact" style={{"--scroll-percentage": props.scrollPercentage}}>
             <div className="section-navigation-container">
@@ -15,13 +18,13 @@ export default function Contact(props) {
                 <span className="section-number">05</span>
             </div>
             <img className="contact--background-img" src={contactBackground}/>
-            <h2 className="section-title">Contact</h2>
+            <h2 className="section-title">{t("title")}</h2>
             <div className="contact--main">
                 <div className="contact--content">
-                    <p>That's already it, or is it really ?</p>
-                    <p>My inbox is always open : you can reach out for any question or opportunity !</p>
+                    <p>{t("part1")}</p>
+                    <p>{t("part2")}</p>
                     <div className="social-networks-container">
-                        <p>You can also spy a little more on there :</p>
+                    <p>{t("part3")}</p>
                         <div className="social-networks-icons">
                             <a target="blank" href="https://github.com/jeannepietropaoli">
                                 <img src={githubIcon}/>

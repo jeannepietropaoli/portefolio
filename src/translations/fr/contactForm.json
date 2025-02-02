@@ -1,0 +1,12 @@
+{
+    "placeholders": {
+        "form_name": "Nom",
+        "email": "Email",
+        "message": "Message"
+    },
+    "errorMessages": {
+        "form_name": "Voulez-vous vraiment rester anonyme ? 🕶",
+        "email": "Votre email doit être valide ! 📧",
+        "message": "Je suis sûre que vous avez quelque chose à dire. ! 📝"
+    }
+}

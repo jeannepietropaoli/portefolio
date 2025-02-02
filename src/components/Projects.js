@@ -9,21 +9,24 @@ import ramenAppScreenshot from "../assets/whatsoup-screenshot.jpeg";
 import reactIcon from "../assets/react.png";
 import Project from "./Project";
 import SectionArrow from "./SectionArrow";
+import { useTranslation } from "react-i18next";
 
 export default function Projects(props) {
+    const { t } = useTranslation("projects");
+
     const projects = [
         {
-            title : "Online CV builder",
-            description : "An online tool to create resumes through a pre-built template. Just edit the content of each section to create yours.",
-            techStack : "This project was built using React",
+            title : t("projects.project1.title"),
+            description : t("projects.project1.description"),
+            techStack : t("projects.project1.techstack"),
             liveLink : "https://online-cv-builder-app.netlify.app/",
             githubRepo : "https://github.com/jeannepietropaoli/cv-builder-v3",
             screenshot : cvAppScreenshot
         },
         {
-            title : "To-do List",
-            description : "Interactive to-do list app to keep track of your daily tasks in an oragnized and visual way.",
-            techStack : "This project was built using JavaScript, Html and CSS",
+            title : t("projects.project2.title"),
+            description : t("projects.project2.description"),
+            techStack : t("projects.project2.techstack"),
             liveLink : "https://jeannepietropaoli.github.io/to_do_list/",
             githubRepo : "https://github.com/jeannepietropaoli/react-simple-to-do-list",
             screenshot: toDoListScreenshot,
@@ -33,25 +36,25 @@ export default function Projects(props) {
                     </a>
         },
         {
-            title : "Weather App",
-            description : "Weather forecast website using a weather API to fetch data from all over the world. Just search your city !",
-            techStack : "This project was built using JavaScript, Html and CSS",
+            title : t("projects.project3.title"),
+            description : t("projects.project3.description"),
+            techStack : t("projects.project3.techstack"),
             liveLink : "https://jeannepietropaoli.github.io/weather-app/",
             githubRepo : "https://github.com/jeannepietropaoli/weather-app",
             screenshot: weatherAppScreenshot
         },
         {
-            title : "Star-rating widget",
-            description : "Nice little animated star-rating widget compiling scores and using SVGs to display them.",
-            techStack : "This project was built using React",
+            title : t("projects.project4.title"),
+            description : t("projects.project4.description"),
+            techStack : t("projects.project4.techstack"),
             liveLink : "http://jeannepietropaoli.github.io/stars-rating-widget/",
             githubRepo : "https://github.com/jeannepietropaoli/stars-rating-widget",
             videoshot: ratinWidgetVideo
         },
         {
-            title : "What'soup?",
-            description : "Fun and interactive ramen creation app. Choose your ingredients and create your own ramen bowl, save your recipes and get inspired.",
-            techStack : "This project was built using Html, Tailwind CSS, Sass and JavaScript (that was the challenge but the React version will come out soon with more features and more efficient code!",
+            title : t("projects.project5.title"),
+            description : t("projects.project5.description"),
+            techStack : t("projects.project5.techstack"),
             liveLink : "https://jeannepietropaoli.github.io/Integration_web_PWA_Jeanne_Pietropaoli/",
             githubRepo : "https://github.com/jeannepietropaoli/Integration_web_PWA_Jeanne_Pietropaoli",
             screenshot: ramenAppScreenshot
@@ -64,9 +67,8 @@ export default function Projects(props) {
                 <SectionArrow previousSectionRef={props.previousSectionRef} nextSectionRef={props.nextSectionRef} color="grey" />
                 <span className="section-number">04</span>
             </div>
-            <h2 className="section-title">Projects</h2>
-            <p>Here are some of my projects ...</p>
-            <p>Optimal viewing experience is on desktop for these projects. Responsive versions are in development and will be identified on each project's card when available.</p>
+            <h2 className="section-title">{t("title")}</h2>
+            <p>{t("paragraphs.p1")}</p>
             <div className="projects-container">
                     {projects.map((project, index) => <Project {...project} key={index} /> )}
                 </div>

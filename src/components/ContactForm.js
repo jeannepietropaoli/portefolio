@@ -2,28 +2,32 @@ import React from "react";
 import emailjs from '@emailjs/browser';
 import paperPlane from "../assets/paper-plane-2.png";
 import "../styles/ContactForm.css";
+import { useTranslation } from "react-i18next";
 
 export default function ContactForm(props) {
     const [isSent, setIsSent] = React.useState(false);
     const [formData, setFormData] = React.useState({
-        from_name: "",
+        form_name: "",
         email: "",
         message: "",
     });
     const paperPlaneRef = React.useRef(null);
     const paperPlaneContainerRef = React.useRef(null);
+
+    const { t } = useTranslation('contactForm');
+
     const inputs = Array.from(document.querySelectorAll('input, textarea'));
 
     const defaultPlaceholders = {
-        from_name : 'Name',
-        email : 'Email',
-        message : 'Message'
+        form_name : t("placeholders.form_name"),
+        email :  t("placeholders.email"),
+        message :  t("placeholders.message")
     }
 
     const inputsErrorMessages = {
-        from_name : 'Do you really want to stay anonymous ? 🕶',
-        email : 'Your email must be valid ! 📧',
-        message : 'I am sure you have something to say ! 📝'
+        form_name : t("errorMessages.form_name"),
+        email : t("errorMessages.email"),
+        message : t("errorMessages.message")
     }
 
     function handleChange(event) {
@@ -57,7 +61,7 @@ export default function ContactForm(props) {
             input.setCustomValidity('');
         });
         setFormData({
-            from_name: "",
+            form_name: "",
             email: "",
             message: "",
         });
@@ -103,9 +107,9 @@ export default function ContactForm(props) {
     return (
         
         <form className="contact--form" onSubmit={handleSubmit}>
-            <input onChange={handleChange} name="from_name" type="text" placeholder="Name" />
-            <input onChange={handleChange} name="email" type="email" placeholder="Email" />
-            <textarea onChange={handleChange} name="message" placeholder="Message"></textarea>
+            <input onChange={handleChange} name="form_name" type="text" placeholder={defaultPlaceholders.form_name} />
+            <input onChange={handleChange} name="email" type="email" placeholder={defaultPlaceholders.email} />
+            <textarea onChange={handleChange} name="message" placeholder={defaultPlaceholders.message}></textarea>
             <button type="submit" disabled={isSent} className="submit-button">
                 <div ref={paperPlaneContainerRef} className="paper-plane-container">
                     <img src={paperPlane} ref={paperPlaneRef} />

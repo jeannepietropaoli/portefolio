@@ -12,7 +12,7 @@ export default function Navbar(props) {
     }
 
     const menuItemsElements = menuItems.map((item, index) => {
-        return <MenuItem key={index} itemName={item} current={props.currentSection === item} closeMenu={() => setMenuHidden(true)} />
+        return <MenuItem key={index} itemName={item.name} itemDisplayName={item.displayName} current={props.currentSection === item} closeMenu={() => setMenuHidden(true)} />
     })
 
     return (

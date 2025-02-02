@@ -7,25 +7,29 @@ import TechStack from './TechStack';
 import Projects from './Projects';
 import Contact from './Contact';
 import useSectionScrollPercentage from './useSectionScrollPercentage';
+import { useTranslation } from 'react-i18next';
 
 // in navbar integrate pourcentage to track advancement
 
 
 function App() {
   const [scrollY, setScrollY] = React.useState(window.scrollY);
+
+  const { t } = useTranslation("navbar");
+
   const aboutSectionRef = React.useRef(null);
   const contactSectionRef = React.useRef(null);
   const homeSectionRef = React.useRef(null);
   const techStackSectionRef = React.useRef(null);
   const projectsSectionRef = React.useRef(null);
-  const sectionsInfos = {
-    home : {name : "home", ref : homeSectionRef, scrollPercentage : useSectionScrollPercentage(homeSectionRef)},
-    about : {name : "about", ref : aboutSectionRef, scrollPercentage : useSectionScrollPercentage(aboutSectionRef)},
-    techStack : {name : "techStack", ref : techStackSectionRef, scrollPercentage : useSectionScrollPercentage(techStackSectionRef)},
-    projects : {name : "projects", ref : projectsSectionRef, scrollPercentage : useSectionScrollPercentage(projectsSectionRef)},
-    contact : {name : "contact", ref : contactSectionRef, scrollPercentage : useSectionScrollPercentage(contactSectionRef)}
-  }
-  const sections = Object.keys(sectionsInfos)
+  const sectionsInfos = [
+    {name : "home", displayName: t("home"), ref : homeSectionRef, scrollPercentage : useSectionScrollPercentage(homeSectionRef)},
+    {name : "about", displayName: t("about"), ref : aboutSectionRef, scrollPercentage : useSectionScrollPercentage(aboutSectionRef)},
+    {name : "techStack", displayName: t("techStack"), ref : techStackSectionRef, scrollPercentage : useSectionScrollPercentage(techStackSectionRef)},
+    {name : "projects", displayName: t("projects"), ref : projectsSectionRef, scrollPercentage : useSectionScrollPercentage(projectsSectionRef)},
+    {name : "contact", displayName: t("contact"), ref : contactSectionRef, scrollPercentage : useSectionScrollPercentage(contactSectionRef)}
+  ]
+  // const sections = Object.keys(sectionsInfos)
   const [currentSection, setCurrentSection] = React.useState(getCurrentSection());
 
   React.useEffect(() => {
@@ -38,21 +42,26 @@ function App() {
   }, [scrollY])
 
   function getCurrentSection() {
-    const sectionInfosKeys = Object.keys(sectionsInfos);
-    return sectionInfosKeys.findLast(key => sectionsInfos[key].scrollPercentage >= 0.7) || "home";
+    const section = sectionsInfos.findLast(section => section.scrollPercentage >= 0.7)
+    return section ? section.name : "home";
   }
 
   function calcullateMainScale() {
-    const contactScrollPercentage = sectionsInfos.contact.scrollPercentage;
-    return contactScrollPercentage >= 0.4
+    const contactSection = sectionsInfos.find(section => section.name === 'contact');
+    const contactSectionScrollPercentage = contactSection.scrollPercentage;
+    return contactSectionScrollPercentage >= 0.4
       ?(1 - ((0.45-0.15)*0.6))
       : 1
+  }
+
+  function findSection(sectionName) {
+    return sectionsInfos.find(section => section.name === sectionName);
   }
 
   return (
     <div className="app">
       <Navbar 
-        sections={sections} 
+        sections={sectionsInfos} 
         currentSection={currentSection} 
       />
       <Home 
@@ -62,26 +71,26 @@ function App() {
       <main style={{transform: `scale(${calcullateMainScale()})`}}>
         <About 
           reference={aboutSectionRef} 
-          scrollPercentage={sectionsInfos.about.scrollPercentage} 
+          scrollPercentage={findSection("about").scrollPercentage} 
           previousSectionRef={homeSectionRef}
           nextSectionRef={techStackSectionRef} 
         />
         <TechStack 
           reference={techStackSectionRef} 
-          scrollPercentage={sectionsInfos.techStack.scrollPercentage} 
+          scrollPercentage={findSection("techStack").scrollPercentage} 
           previousSectionRef={aboutSectionRef}
           nextSectionRef={projectsSectionRef} 
         />
         <Projects 
           reference={projectsSectionRef} 
-          scrollPercentage={sectionsInfos.projects.scrollPercentage}
+          scrollPercentage={findSection("projects").scrollPercentage}
           previousSectionRef={techStackSectionRef}
           nextSectionRef={contactSectionRef} 
         />
       </main>
       <Contact 
         reference={contactSectionRef} 
-        scrollPercentage={sectionsInfos.contact.scrollPercentage} 
+        scrollPercentage={findSection("contact").scrollPercentage} 
         previousSectionRef={homeSectionRef}
       />
     </div>
