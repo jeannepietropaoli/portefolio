@@ -1,13 +1,12 @@
 {
   "files": {
     "main.css": "/portefolio/static/css/main.fee9540d.css",
-    "main.js": "/portefolio/static/js/main.a0915638.js",
+    "main.js": "/portefolio/static/js/main.4e14c652.js",
     "static/media/whatsoup_video.webm": "/portefolio/static/media/whatsoup_video.4a3a29230dae8856da1b.webm",
-    "static/media/whatsoup-screenshot.jpeg": "/portefolio/static/media/whatsoup-screenshot.bd0522a8e01606b983f7.jpeg",
+    "static/media/fruictify-video.webm": "/portefolio/static/media/fruictify-video.1a86454605651e775e8a.webm",
     "static/media/color-background.jpg": "/portefolio/static/media/color-background.a34d2946b33c6fa621c2.jpg",
     "static/media/cv-app-screenshot-v2.png": "/portefolio/static/media/cv-app-screenshot-v2.b7c3895e5d2a07b234d8.png",
     "static/media/weather-app-screenshot.png": "/portefolio/static/media/weather-app-screenshot.c133764dc5af189f69b0.png",
-    "static/media/rating-widget-video.mp4": "/portefolio/static/media/rating-widget-video.6841b8c19f9636803276.mp4",
     "static/media/replique-spotify-screenshot.png": "/portefolio/static/media/replique-spotify-screenshot.4188cab757917f0adab7.png",
     "static/media/profile-illustration-guitar.jpg": "/portefolio/static/media/profile-illustration-guitar.48ec2fe49325e4452b80.jpg",
     "static/media/to-come-screenshot.jpg": "/portefolio/static/media/to-come-screenshot.ace3129dc7807eb4da59.jpg",
@@ -27,10 +26,10 @@
     "static/media/angular.svg": "/portefolio/static/media/angular.8d025088a1ff1e8c05194f4ddab7a0ad.svg",
     "static/media/npm.svg": "/portefolio/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
     "main.fee9540d.css.map": "/portefolio/static/css/main.fee9540d.css.map",
-    "main.a0915638.js.map": "/portefolio/static/js/main.a0915638.js.map"
+    "main.4e14c652.js.map": "/portefolio/static/js/main.4e14c652.js.map"
   },
   "entrypoints": [
     "static/css/main.fee9540d.css",
-    "static/js/main.a0915638.js"
+    "static/js/main.4e14c652.js"
   ]
 }
