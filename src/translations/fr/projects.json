@@ -21,7 +21,7 @@
         },
         "project4": {
             "title": "Fruictify",
-            "description": "Application monopage avec React Router d'une boutique en ligne virtuelle. Familiarisation au TDD avec React-testing library.",
+            "description": "Application monopage avec React Router d'une boutique en ligne virtuelle. Familiarisation au TDD avec React-testing library et aux customs hooks.",
             "techstack": "Ce projet a été réalisé avec React"
         },
         "project5": {
