@@ -20,8 +20,8 @@
             "techstack": "This project was built using JavaScript, Html and CSS"
         },
         "project4": {
-            "title": "Star-rating widget",
-            "description": "Nice little animated star-rating widget compiling scores and using SVGs to display them.",
+            "title": "Fruictify",
+            "description": "Single Page Application with React Router of a fake online store with a shopping cart feature. TDD practice using React-testing library.",
             "techstack": "This project was built using React"
         },
         "project5": {

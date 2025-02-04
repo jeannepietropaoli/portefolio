@@ -20,8 +20,8 @@
             "techstack": "Ce projet a été réalisé avec JavaScript, HTML et CSS"
         },
         "project4": {
-            "title": "Widget de notation par étoiles",
-            "description": "Petit widget animé de notation par étoiles qui compile les scores et utilise des SVG pour les afficher.",
+            "title": "Fruictify",
+            "description": "Application monopage avec React Router d'une boutique en ligne virtuelle. Familiarisation au TDD avec React-testing library.",
             "techstack": "Ce projet a été réalisé avec React"
         },
         "project5": {

@@ -4,8 +4,7 @@ import "../styles/Section.css"
 import cvAppScreenshot from "../assets/cv-app-screenshot-v2.png";
 import toDoListScreenshot from "../assets/to-do-list-screenshot.png";
 import weatherAppScreenshot from "../assets/weather-app-screenshot.png";
-import ratinWidgetVideo from "../assets/rating-widget-video.mp4";
-import ramenAppScreenshot from "../assets/whatsoup-screenshot.jpeg";
+import fruictifyVideo from "../assets/fruictify-video.webm";
 import ramenAppVideo from "../assets/whatsoup_video.webm";
 import spotifyCloneScreenshot from "../assets/replique-spotify-screenshot.png";
 import toComeScreenshot from "../assets/to-come-screenshot.jpg";
@@ -40,13 +39,22 @@ export default function Projects(props) {
                     </a>,
             done: true
         },
-        {
+        /*{
             title : t("projects.project3.title"),
             description : t("projects.project3.description"),
             techStack : t("projects.project3.techstack"),
             liveLink : "https://jeannepietropaoli.github.io/weather-app/",
             githubRepo : "https://github.com/jeannepietropaoli/weather-app",
             screenshot: weatherAppScreenshot,
+            done: true
+        }, */
+        {
+            title : t("projects.project4.title"),
+            description : t("projects.project4.description"),
+            techStack : t("projects.project4.techstack"),
+            liveLink : "https://fruictify.netlify.app",
+            githubRepo : "https://github.com/jeannepietropaoli/shopping-cart-v2",
+            videoshot: fruictifyVideo,
             done: true
         },
         {
