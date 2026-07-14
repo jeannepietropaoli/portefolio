@@ -1,35 +1,36 @@
 {
   "files": {
-    "main.css": "/portefolio/static/css/main.fee9540d.css",
-    "main.js": "/portefolio/static/js/main.d204e53c.js",
+    "main.css": "/portefolio/static/css/main.0e5708b1.css",
+    "main.js": "/portefolio/static/js/main.22250b96.js",
     "static/media/whatsoup_video.webm": "/portefolio/static/media/whatsoup_video.4a3a29230dae8856da1b.webm",
     "static/media/fruictify-video.webm": "/portefolio/static/media/fruictify-video.1a86454605651e775e8a.webm",
     "static/media/color-background.jpg": "/portefolio/static/media/color-background.a34d2946b33c6fa621c2.jpg",
     "static/media/cv-app-screenshot-v2.png": "/portefolio/static/media/cv-app-screenshot-v2.b7c3895e5d2a07b234d8.png",
     "static/media/weather-app-screenshot.png": "/portefolio/static/media/weather-app-screenshot.c133764dc5af189f69b0.png",
+    "static/media/wordpress.png": "/portefolio/static/media/wordpress.15dc79fe8a7bee0e394a.png",
     "static/media/replique-spotify-screenshot.png": "/portefolio/static/media/replique-spotify-screenshot.4188cab757917f0adab7.png",
     "static/media/profile-illustration-guitar.jpg": "/portefolio/static/media/profile-illustration-guitar.48ec2fe49325e4452b80.jpg",
     "static/media/to-come-screenshot.jpg": "/portefolio/static/media/to-come-screenshot.ace3129dc7807eb4da59.jpg",
-    "static/media/mysql-logo.png": "/portefolio/static/media/mysql-logo.0391ad60aafcd6b4359e.png",
     "static/media/to-do-list-screenshot.png": "/portefolio/static/media/to-do-list-screenshot.12267c1973e0195e82c1.png",
     "static/media/react.png": "/portefolio/static/media/react.66e10dd88d9314b99c2d.png",
-    "static/media/vuejs-logo.png": "/portefolio/static/media/vuejs-logo.3381a3095a6024fd52bd.png",
     "static/media/live.png": "/portefolio/static/media/live.042da6193974e9a20ced.png",
     "static/media/paper-plane-hover.png": "/portefolio/static/media/paper-plane-hover.b579fff84993ce8478c2.png",
     "static/media/paper-plane-2.png": "/portefolio/static/media/paper-plane-2.940d9feb2bb0325e97b0.png",
-    "static/media/tailwind-logo.png": "/portefolio/static/media/tailwind-logo.9bff1085bc1e2a0cff89.png",
     "static/media/github-dark.png": "/portefolio/static/media/github-dark.47055b3366c515c8309e.png",
+    "static/media/sass.webp": "/portefolio/static/media/sass.8b9569f34219b8fb33b6.webp",
+    "static/media/laravel.webp": "/portefolio/static/media/laravel.cb0a370b5c3181269a94.webp",
     "static/media/css3.png": "/portefolio/static/media/css3.2a7daffa85bb2869d26d.png",
     "static/media/js.png": "/portefolio/static/media/js.70fde9fe3aaac60ce676.png",
     "static/media/github.png": "/portefolio/static/media/github.7ecb8bf385ce19734932.png",
+    "static/media/elementor.jpg": "/portefolio/static/media/elementor.dd446b5dd60962bd79e3.jpg",
+    "static/media/acf.svg": "/portefolio/static/media/acf.c264c8c1debb3baf4addcf13851bed51.svg",
+    "static/media/figma.svg": "/portefolio/static/media/figma.753c074260c28fd2c006e8a0bb5bdfe2.svg",
     "index.html": "/portefolio/index.html",
-    "static/media/angular.svg": "/portefolio/static/media/angular.8d025088a1ff1e8c05194f4ddab7a0ad.svg",
-    "static/media/npm.svg": "/portefolio/static/media/npm.d8917a420fc3657bf21283394459f6ec.svg",
-    "main.fee9540d.css.map": "/portefolio/static/css/main.fee9540d.css.map",
-    "main.d204e53c.js.map": "/portefolio/static/js/main.d204e53c.js.map"
+    "main.0e5708b1.css.map": "/portefolio/static/css/main.0e5708b1.css.map",
+    "main.22250b96.js.map": "/portefolio/static/js/main.22250b96.js.map"
   },
   "entrypoints": [
-    "static/css/main.fee9540d.css",
-    "static/js/main.d204e53c.js"
+    "static/css/main.0e5708b1.css",
+    "static/js/main.22250b96.js"
   ]
 }
