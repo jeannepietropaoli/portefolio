@@ -1,8 +1,11 @@
 {
     "title": "Tech Stack",
     "paragraphs": {
-        "p1": "Here are the technologies I am used to. You can hover or click on the cards to discover the details.",
+        "p1": "This section showcases the technologies I use in my day-to-day work, as well as those I've explored through my personal projects. Hover over or click the cards to learn more.",
         "p2": "The animated percentage circles on these cards are more about visual engagement than precise skill measurement. They serve as an interactive, eye-catching element, offering a glimpse into my familiarity with various technologies and my keen interest on interactive UI designs.",
         "p3": "I am always down for a challenge in another tech though !"
-    }
+    },
+    "stack-catg-1": "Frontend & Web",
+    "stack-catg-2": "CMS & Backend",
+    "stack-catg-3": "Tools & Workflow"
 }

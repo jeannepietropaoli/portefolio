@@ -21,15 +21,25 @@ export default function Projects(props) {
             title : t("projects.project1.title"),
             description : t("projects.project1.description"),
             techStack : t("projects.project1.techstack"),
-            liveLink : "https://online-cv-builder-app.netlify.app/",
-            githubRepo : "https://github.com/jeannepietropaoli/cv-builder-v3",
-            screenshot : cvAppScreenshot,
+            liveLink : "https://jeannepietropaoli.github.io/What_soup_PWA/",
+            githubRepo : "https://github.com/jeannepietropaoli/What_soup_PWA",
+            // screenshot: ramenAppScreenshot,
+            videoshot: ramenAppVideo,
             done: true
         },
         {
             title : t("projects.project2.title"),
             description : t("projects.project2.description"),
             techStack : t("projects.project2.techstack"),
+            liveLink : "https://online-cv-builder-app.netlify.app/",
+            githubRepo : "https://github.com/jeannepietropaoli/cv-builder-v3",
+            screenshot : cvAppScreenshot,
+            done: true
+        },
+        {
+            title : t("projects.project3.title"),
+            description : t("projects.project3.description"),
+            techStack : t("projects.project3.techstack"),
             liveLink : "https://jeannepietropaoli.github.io/to_do_list/",
             githubRepo : "https://github.com/jeannepietropaoli/react-simple-to-do-list",
             screenshot: toDoListScreenshot,
@@ -40,31 +50,21 @@ export default function Projects(props) {
             done: true
         },
         /*{
-            title : t("projects.project3.title"),
-            description : t("projects.project3.description"),
-            techStack : t("projects.project3.techstack"),
+            title : t("projects.project4.title"),
+            description : t("projects.project4.description"),
+            techStack : t("projects.project4.techstack"),
             liveLink : "https://jeannepietropaoli.github.io/weather-app/",
             githubRepo : "https://github.com/jeannepietropaoli/weather-app",
             screenshot: weatherAppScreenshot,
             done: true
         }, */
         {
-            title : t("projects.project4.title"),
-            description : t("projects.project4.description"),
-            techStack : t("projects.project4.techstack"),
-            liveLink : "https://fruictify.netlify.app",
-            githubRepo : "https://github.com/jeannepietropaoli/shopping-cart-v2",
-            videoshot: fruictifyVideo,
-            done: true
-        },
-        {
             title : t("projects.project5.title"),
             description : t("projects.project5.description"),
             techStack : t("projects.project5.techstack"),
-            liveLink : "https://jeannepietropaoli.github.io/What_soup_PWA/",
-            githubRepo : "https://github.com/jeannepietropaoli/What_soup_PWA",
-            // screenshot: ramenAppScreenshot,
-            videoshot: ramenAppVideo,
+            liveLink : "https://fruictify.netlify.app",
+            githubRepo : "https://github.com/jeannepietropaoli/shopping-cart-v2",
+            videoshot: fruictifyVideo,
             done: true
         },
         {
